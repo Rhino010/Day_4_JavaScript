@@ -49,8 +49,8 @@ form.addEventListener('submit', (event) => {
         event.preventDefault()
         let query_first = document.querySelector('#first-name')
         let query_last = document.querySelector('#last-name')
-        let first_name = event.composedPath[0][0].value;
-        let last_name = event.composedPath[0][1].value;
+        let first_name = event.composedPath()[0][0].value;
+        let last_name = event.composedPath()[0][1].value;
         console.log(event)
         console.log(first_name, last_name)
         console.log(`This came from the query selector: ${query_first.value}, ${query_last.value}`)
